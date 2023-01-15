@@ -8,7 +8,36 @@ class Employee:
         self.salary = salary
         self.department = department
 
+    def demo(self, a, b, c, d=5, e=None):
+        print("a=", a)
+        print("b=", b)
+        print("c=", c)
+        print('d=', d)
+        print("e=", e)
 
+    def tax(self):
+        return self.salary * 0.2
+
+    def salary_per_day(self):
+        return self.salary / 30
+
+
+Steve = Employee(3789, 2500, "Human Resources")
+print("ID = ", Steve.ID)
+print("Salary: ", Steve.salary)
+print("Department: ", Steve.department)
+print("Tax paid by Steve: ", Steve.tax())
+print("Salary per day of Steve: ", Steve.salary_per_day())
+
+print("Demo 1")
+Steve.demo(1, 2, 3)
+print("Demo 2")
+Steve.demo(1, 2, 3, 4)
+print("Demo 3")
+Steve.demo(1, 2, 3, 4, 5)
+
+
+print("-------")
 quinn = Employee()
 print("ID:", quinn.ID)
 print("Salary: ", quinn.salary)

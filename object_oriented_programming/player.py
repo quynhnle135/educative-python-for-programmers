@@ -7,6 +7,17 @@ class Player:
         self.formerTeams = []
         self.teamMembers.append(self.name)
 
+    @classmethod
+    def getTeamName(cls):
+        return cls.teamName
+
+    @staticmethod
+    def demo():
+        print("I am a static method")
+
+
+print(Player.getTeamName())
+
 
 p1 = Player('Mark')
 p1.formerTeams.append('Barcelona')
