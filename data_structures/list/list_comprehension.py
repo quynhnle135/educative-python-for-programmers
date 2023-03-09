@@ -19,3 +19,6 @@ list2 = [10, 60, 20, 50]
 
 sum_list = [(n1, n2) for n1 in list1 for n2 in list2 if n1 + n2 > 100]
 print(sum_list)
+new_list = list1 + list2
+new_list.sort()
+print(new_list)
