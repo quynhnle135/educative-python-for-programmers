@@ -1,4 +1,4 @@
-from datastructure.stack.my_stack import Stack
+from data_structures.stack.my_stack import Stack
 
 
 def is_paren_balanced(paren_string):
