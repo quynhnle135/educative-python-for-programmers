@@ -17,5 +17,9 @@ print(set_A.difference(set_B))
 print(set_B - set_A)
 print(set_B.difference(set_A))
 
+my_set = {7, 3, 1, 8, 9, 10}
+print(my_set)
 
+traffic_light = {"Green": "Go", "Red": "Stop"}
+print(traffic_light.popitem())
 
